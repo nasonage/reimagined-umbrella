@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f1" />
+  <title>Kindred — Learn how you love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav shell">
+    <a class="brand" href="#" aria-label="Kindred home"><span class="brand-mark">k</span> kindred</a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a href="#languages">Love languages</a>
+    </nav>
+    <button class="button button-small" data-start>Take the quiz <span>↗</span></button>
+  </header>
+
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>♥</span> A little insight goes a long way</div>
+        <h1>Love them in a way they can <em>feel.</em></h1>
+        <p class="lede">Discover what makes you feel most cared for—and turn that insight into small, meaningful moments every day.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" data-start>Discover your language <span>→</span></button>
+          <span class="time-note"><b>2 min</b><br>12 thoughtful questions</span>
+        </div>
+        <div class="social-proof">
+          <div class="faces"><span>J</span><span>M</span><span>A</span><span>R</span></div>
+          <div><b>12,000+ people</b><br><span>understanding each other better</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative illustration of two people connecting">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✦</span>
+        <div class="note-card note-one"><span>☀</span><b>Quality time</b><small>Sunday walks together</small></div>
+        <div class="note-card note-two"><span>♡</span><b>Words that matter</b><small>“I believe in you”</small></div>
+        <div class="portrait portrait-a"><div class="head"></div><div class="hair"></div><div class="body"></div></div>
+        <div class="portrait portrait-b"><div class="head"></div><div class="hair"></div><div class="body"></div></div>
+        <div class="connection"><span>♥</span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Love language examples">
+      <div>THOUGHTFUL WORDS <span>✦</span> SHARED MOMENTS <span>✦</span> LITTLE ACTS <span>✦</span> WARM EMBRACES <span>✦</span> MEANINGFUL GIFTS <span>✦</span></div>
+    </section>
+
+    <section class="how shell" id="how">
+      <div class="section-heading">
+        <span class="kicker">The good stuff, made simple</span>
+        <h2>Understanding each other<br>shouldn’t feel like homework.</h2>
+      </div>
+      <div class="steps">
+        <article><span class="step-number">01</span><div class="step-icon coral">☻</div><h3>Answer honestly</h3><p>Choose what feels most like you. There are no wrong answers.</p></article>
+        <article><span class="step-number">02</span><div class="step-icon gold">✦</div><h3>Meet your match</h3><p>See your primary language and the ways you naturally give love.</p></article>
+        <article><span class="step-number">03</span><div class="step-icon lilac">↗</div><h3>Put it into practice</h3><p>Get simple, personal ideas that make care easier to express.</p></article>
+      </div>
+    </section>
+
+    <section class="languages" id="languages">
+      <div class="shell">
+        <div class="section-heading centered">
+          <span class="kicker">Five ways to say “I love you”</span>
+          <h2>We all hear love differently.</h2>
+          <p>Most of us value every kind of care, but one or two tend to speak a little louder.</p>
+        </div>
+        <div class="language-cards">
+          <article class="lang-card words"><span>“ ”</span><h3>Words of affirmation</h3><p>Encouragement, appreciation, and being seen.</p></article>
+          <article class="lang-card time"><span>◷</span><h3>Quality time</h3><p>Presence, attention, and shared experiences.</p></article>
+          <article class="lang-card acts"><span>✦</span><h3>Acts of service</h3><p>Thoughtful help that makes life feel lighter.</p></article>
+          <article class="lang-card touch"><span>⌁</span><h3>Physical touch</h3><p>Closeness, warmth, and reassuring connection.</p></article>
+          <article class="lang-card gifts"><span>◇</span><h3>Receiving gifts</h3><p>Meaningful tokens that say, “I thought of you.”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta shell">
+      <div><span class="kicker light">Ready when you are</span><h2>A better way to say<br>“I care about you.”</h2></div>
+      <button class="button button-cream" data-start>Take the free quiz <span>→</span></button>
+      <span class="cta-heart">♥</span>
+    </section>
+  </main>
+
+  <footer class="shell"><a class="brand" href="#"><span class="brand-mark">k</span> kindred</a><p>Made with care for people who care.</p><span>© 2026 Kindred</span></footer>
+
+  <div class="quiz-modal" id="quiz" role="dialog" aria-modal="true" aria-labelledby="quiz-title" hidden>
+    <div class="quiz-panel">
+      <button class="close" id="closeQuiz" aria-label="Close quiz">×</button>
+      <div class="quiz-progress"><div id="progressBar"></div></div>
+      <div class="quiz-top"><span id="questionCount">Question 1 of 12</span><span>Answer with your first instinct</span></div>
+      <div id="quizContent"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
