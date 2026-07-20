@@ -1,21 +1,25 @@
-# Kindred
+# Only Cats Connect
 
-A responsive love-language quiz website with 12 questions, personalized results, and practical suggestions.
+A polished, host-led, cat-themed lateral-thinking quiz inspired by classic connection quiz formats.
 
-## Publish with GitHub Pages
+## Play locally
 
-1. Create a new GitHub repository.
-2. Upload all files from this folder to the repository root.
-3. Open **Settings → Pages** in the repository.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/ (root)` folder, then click **Save**.
+Open `index.html` directly, or serve the folder:
 
-GitHub will publish the site at:
+```bash
+python3 -m http.server 8000
+```
 
-`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`
+Then visit `http://localhost:8000`.
 
-The website uses relative file paths, so it works from a GitHub project URL without further changes.
+## GitHub Pages
 
-## Local preview
+The app is fully static. In the repository settings, enable **Pages → Deploy from a branch**, select the main branch and `/ (root)`.
 
-Open `index.html` in a browser. No dependencies or build commands are required.
+## Features
+
+- Connections, sequences, and a fully interactive connecting wall
+- Two-team host scoring
+- Responsive layout for projector, laptop, and mobile
+- Optional sound cues
+- No build step or dependencies

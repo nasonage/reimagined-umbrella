@@ -1,102 +1,96 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#fff8f1" />
-  <title>Kindred — Learn how you love</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10172b">
+  <meta name="description" content="A cat-themed lateral-thinking quiz for teams.">
+  <title>Only Cats Connect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="personalized.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-  <header class="nav shell">
-    <a class="brand" href="#" aria-label="Kindred home"><span class="brand-mark">k</span> kindred</a>
-    <nav aria-label="Main navigation">
-      <a href="#how">How it works</a>
-      <a href="#languages">Love languages</a>
-    </nav>
-    <button class="button button-small" data-start>Take the quiz <span>↗</span></button>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Only Cats Connect home">
+      <span class="brand-mark" aria-hidden="true">◉</span>
+      <span>ONLY CATS <b>CONNECT</b></span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-button" id="soundButton" aria-label="Toggle sound" title="Toggle sound">♪</button>
+      <button class="small-button" id="resetButton">New game</button>
+    </div>
   </header>
 
-  <main>
-    <section class="hero shell" id="home">
+  <main id="app">
+    <section class="screen active" id="homeScreen">
       <div class="hero-copy">
-        <div class="eyebrow"><span>♥</span> A little insight goes a long way</div>
-        <h1>Love them in a way they can <em>feel.</em></h1>
-        <p class="lede">Discover what makes you feel most cared for—and turn that insight into small, meaningful moments every day.</p>
-        <div class="hero-actions">
-          <button class="button button-primary" data-start>Discover your language <span>→</span></button>
-          <span class="time-note"><b>2 min</b><br>12 thoughtful questions</span>
-        </div>
-        <div class="social-proof">
-          <div class="faces"><span>J</span><span>M</span><span>A</span><span>R</span></div>
-          <div><b>12,000+ people</b><br><span>understanding each other better</span></div>
-        </div>
+        <p class="eyebrow">A lateral-thinking quiz for curious cats</p>
+        <h1>Make the<br><em>connection.</em></h1>
+        <p class="intro">Three rounds. Two teams. A whole lot of feline knowledge — from ancient Egypt to internet infamy.</p>
+        <button class="primary-button" id="startButton">Start the quiz <span>→</span></button>
       </div>
-
-      <div class="hero-art photo-story" aria-label="Two joyful moments in the garden">
-        <div class="photo-frame photo-main"><img src="assets/garden-moment-two.jpg" alt="A smiling expectant mother in a colourful dress standing in a sunny garden" /></div>
-        <div class="photo-frame photo-secondary"><img src="assets/garden-moment-one.jpg" alt="A smiling expectant mother in a pink dress on a garden walk" /></div>
-        <span class="spark spark-one">✦</span><span class="spark spark-two">✦</span>
-        <div class="note-card note-one"><span>☀</span><b>Quality time</b><small>Garden walks together</small></div>
-        <div class="photo-caption"><span>♥</span><div><b>Love lives here</b><small>in the moments we keep</small></div></div>
+      <div class="hero-art" aria-label="Abstract illustration of a cat">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="cat-head">
+          <div class="ear left"></div><div class="ear right"></div>
+          <div class="cat-face"><span class="eye"></span><span class="eye"></span><span class="nose">◆</span></div>
+        </div>
+        <span class="art-label label-a">01 · CONNECTIONS</span>
+        <span class="art-label label-b">02 · SEQUENCES</span>
+        <span class="art-label label-c">03 · WALL</span>
+      </div>
+      <div class="round-preview">
+        <article><span>01</span><h3>Connections</h3><p>What links the four clues?</p></article>
+        <article><span>02</span><h3>Sequences</h3><p>What comes fourth?</p></article>
+        <article><span>03</span><h3>Connecting Wall</h3><p>Sort sixteen clues.</p></article>
       </div>
     </section>
 
-    <section class="marquee" aria-label="Love language examples">
-      <div>THOUGHTFUL WORDS <span>✦</span> SHARED MOMENTS <span>✦</span> LITTLE ACTS <span>✦</span> WARM EMBRACES <span>✦</span> MEANINGFUL GIFTS <span>✦</span></div>
-    </section>
-
-    <section class="how shell" id="how">
-      <div class="section-heading">
-        <span class="kicker">The good stuff, made simple</span>
-        <h2>Understanding each other<br>shouldn’t feel like homework.</h2>
-      </div>
-      <div class="steps">
-        <article><span class="step-number">01</span><div class="step-icon coral">☻</div><h3>Answer honestly</h3><p>Choose what feels most like you. There are no wrong answers.</p></article>
-        <article><span class="step-number">02</span><div class="step-icon gold">✦</div><h3>Meet your match</h3><p>See your primary language and the ways you naturally give love.</p></article>
-        <article><span class="step-number">03</span><div class="step-icon lilac">↗</div><h3>Put it into practice</h3><p>Get simple, personal ideas that make care easier to express.</p></article>
-      </div>
-    </section>
-
-    <section class="languages" id="languages">
-      <div class="shell">
-        <div class="section-heading centered">
-          <span class="kicker">Five ways to say “I love you”</span>
-          <h2>We all hear love differently.</h2>
-          <p>Most of us value every kind of care, but one or two tend to speak a little louder.</p>
+    <section class="screen" id="setupScreen">
+      <div class="setup-card">
+        <p class="eyebrow">Before the whiskers fly</p>
+        <h2>Name your teams</h2>
+        <div class="team-inputs">
+          <label>Team one<input id="teamOneInput" maxlength="24" value="The Tabbies"></label>
+          <div class="versus">VS</div>
+          <label>Team two<input id="teamTwoInput" maxlength="24" value="The Tuxedos"></label>
         </div>
-        <div class="language-cards">
-          <article class="lang-card words"><span>“ ”</span><h3>Words of affirmation</h3><p>Encouragement, appreciation, and being seen.</p></article>
-          <article class="lang-card time"><span>◷</span><h3>Quality time</h3><p>Presence, attention, and shared experiences.</p></article>
-          <article class="lang-card acts"><span>✦</span><h3>Acts of service</h3><p>Thoughtful help that makes life feel lighter.</p></article>
-          <article class="lang-card touch"><span>⌁</span><h3>Physical touch</h3><p>Closeness, warmth, and reassuring connection.</p></article>
-          <article class="lang-card gifts"><span>◇</span><h3>Receiving gifts</h3><p>Meaningful tokens that say, “I thought of you.”</p></article>
-        </div>
+        <button class="primary-button" id="beginButton">Begin round one <span>→</span></button>
       </div>
     </section>
 
-    <section class="cta shell">
-      <div><span class="kicker light">Ready when you are</span><h2>A better way to say<br>“I care about you.”</h2></div>
-      <button class="button button-cream" data-start>Take the free quiz <span>→</span></button>
-      <span class="cta-heart">♥</span>
+    <section class="screen" id="gameScreen">
+      <div class="game-heading">
+        <div><p class="eyebrow" id="roundKicker">Round 01</p><h2 id="roundTitle">Connections</h2></div>
+        <div class="progress-copy"><span id="questionCount">Question 1 / 4</span><div class="progress"><i id="progressBar"></i></div></div>
+      </div>
+      <div id="questionArea"></div>
+      <div class="game-controls">
+        <button class="secondary-button" id="revealButton">Reveal answer</button>
+        <button class="primary-button" id="nextButton" disabled>Next question <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="resultsScreen">
+      <div class="results-wrap">
+        <p class="eyebrow">Final scores</p>
+        <h2>The cat’s out<br>of the bag.</h2>
+        <div class="podium" id="podium"></div>
+        <button class="primary-button" id="playAgainButton">Play again <span>↻</span></button>
+      </div>
     </section>
   </main>
 
-  <footer class="shell"><a class="brand" href="#"><span class="brand-mark">k</span> kindred</a><p>Made with care for people who care.</p><span>© 2026 Kindred</span></footer>
+  <aside class="score-dock" id="scoreDock" hidden>
+    <div class="team-score active-team" data-team="0"><span id="teamOneName">The Tabbies</span><strong id="scoreOne">0</strong><div><button data-score="-1">−</button><button data-score="1">+</button></div></div>
+    <div class="turn-indicator"><span>TURN</span><button id="switchTeam" aria-label="Switch active team">↔</button></div>
+    <div class="team-score" data-team="1"><span id="teamTwoName">The Tuxedos</span><strong id="scoreTwo">0</strong><div><button data-score="-1">−</button><button data-score="1">+</button></div></div>
+  </aside>
 
-  <div class="quiz-modal" id="quiz" role="dialog" aria-modal="true" aria-labelledby="quiz-title" hidden>
-    <div class="quiz-panel">
-      <button class="close" id="closeQuiz" aria-label="Close quiz">×</button>
-      <div class="quiz-progress"><div id="progressBar"></div></div>
-      <div class="quiz-top"><span id="questionCount">Question 1 of 12</span><span>Answer with your first instinct</span></div>
-      <div id="quizContent"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
